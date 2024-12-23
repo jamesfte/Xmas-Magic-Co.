@@ -67,7 +67,7 @@ main {
 
 /* Gift Banner */
 .gift_banner {
-    background-image: url(/images/gift-banners-wallpapers.jpg);
+    background-image: url(../images/gift-banners-wallpapers.jpg);
     width: 100%;
     background-size: 100% 800px;
     height: 800px;
@@ -110,7 +110,7 @@ footer {
 
 /* Responsive Christmas Leaves */
 .christmas-leaves {
-    background-image: url('/images/bannerchristmas-png.png');
+    background-image: url(../images/bannerchristmas-png.png);
     background-repeat: repeat;
     background-size: 500px 100px;
     background-position: center;
@@ -313,7 +313,7 @@ h2 {
 
 /* Santa Image */
 .santa {
-    background-image: url(/images/santa-shopping.jpg);
+    background-image: url(../images/santa-shopping.jpg);
     background-size: 1650px 500px;
     height: 500px;
     width: 100%;
