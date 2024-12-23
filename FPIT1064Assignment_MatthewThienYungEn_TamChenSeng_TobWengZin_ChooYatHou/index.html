@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Discover unique Christmas gifts and decorations at Xmas Magic Co. Shop now!">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Xmas Magic Co.</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <a href="index.html">
+                <img src="/images/company-logo.png" alt="Xmas Magic Co.">
+            </a>
+            <h1>Merry Christmas</h1>
+            <img src="/images/snowflake.png" alt="Snowflakes">
+        </header>
+
+        <div class="christmas-leaves"></div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <div class="dropdown-menu">
+                <button class="dropdown-button">Category</button>
+                <div class="dropdown-content" id="dropdown-links">
+                    <a href="all.html?category=all" data-category="all">All</a>
+                    <a href="all.html?category=puzzles-and-games" data-category="puzzles-and-games">Puzzles and Games</a>
+                    <a href="all.html?category=decorations" data-category="decorations">Decorations</a>
+                    <a href="all.html?category=gift_sets" data-category="gift_sets">Gift Sets</a>
+                </div>
+            </div>
+            <a href="shopping_cart.html">Shopping Cart</a>
+            <a href="contact_us.html">Contact Us</a>
+            <a href="about_us.html">About Us</a>
+        </nav>
+                
+        <main>
+            
+            <audio id="backgroundMusic" loop>
+                <source src="/videos and audios/All I Want For Christmas Is You.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+            
+            <!-- Play/Stop Button -->
+            <button id="playStopButton" class="control-button">
+                <i class="fas fa-volume-mute"></i> <!-- Start music icon -->
+            </button>
+
+            <script>
+                const audioElement = document.getElementById('backgroundMusic');
+                const playStopButton = document.getElementById('playStopButton');
+                const iconElement = playStopButton.querySelector('i');
+            
+                // Set initial volume to 50%
+                audioElement.volume = 0.5;
+            
+                // Initial state: set the audio to be paused
+                audioElement.pause();
+            
+                // Add event listener for play/stop button
+                playStopButton.addEventListener('click', function() {
+                  if (audioElement.paused) {
+                    audioElement.play();  // Start playing the music
+                    iconElement.classList.remove('fa-volume-mute'); // Remove "start" icon
+                    iconElement.classList.add('fa-volume-down'); // Add "stop" icon
+                  } else {
+                    audioElement.pause();  // Stop the music
+                    iconElement.classList.remove('fa-volume-down'); // Remove "stop" icon
+                    iconElement.classList.add('fa-volume-mute'); // Add "start" icon
+                  }
+                });
+            </script>
+
+            <div class="gift_banner">
+                <p>
+                    Finding the best gift for your loves one?
+                    <br>
+                    Try out our shop.
+                </p>
+                <a href="all.html">Shop now</a>
+            </div>
+            <h2>Tutorial video:</h2>
+            <video style="width: 90%;padding-left:5%;padding-top:3%" controls src="/videos and audios/Tutorial.mp4"></video>
+            
+        </main>
+
+        
+        <footer>
+            &copy; 2024 Xmas Magic Co. | All Rights Reserved
+        </footer>
+
+    </body>
+</html>
