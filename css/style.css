@@ -1,0 +1,591 @@
+/* General Styles */
+body {
+    background-color: red;
+    color: white;
+    width: 100%;
+    margin: 0;
+}
+
+header {
+    background-color: rgb(201, 3, 3);
+    width: 100%;
+    height: 150px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+    color: white;
+}
+
+header a img {
+    height: 150px;
+    width: auto;
+}
+
+h1 {
+    font-size: 80px;
+    align-self: center;
+    font-family: 'Pacifico', cursive;
+}
+
+/* Nav Bar */
+nav {
+    background-color: rgb(2, 148, 34);
+    height: 63px;
+    padding-top: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    margin: 0px 15px;
+    height: 53px;
+    font-family: 'Pacifico', cursive;
+    border: 3px solid white;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    background-color: rgb(201, 3, 3);
+}
+
+nav > a:hover {
+    background-color: white;
+    color: rgb(201, 3, 3);
+    padding: 2px;
+    margin: 0 14px;
+    border: 3px solid rgb(201, 3, 3);
+}
+
+/* Main Section */
+main {
+    background-color: rgb(201, 3, 3);
+    color: white;
+    width: 90%;
+    margin: 0 5%;
+}
+
+/* Gift Banner */
+.gift_banner {
+    background-image: url(/images/gift-banners-wallpapers.jpg);
+    width: 100%;
+    background-size: 100% 800px;
+    height: 800px;
+    display: flex;
+}
+
+.gift_banner p {
+    margin-left: 50%;
+    margin-top: 460px;
+    font-size: 40px;
+    color: white;
+}
+
+.gift_banner a {
+    font-family: 'Pacifico', cursive;
+    color: white;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 32px;
+    margin-left: -626px;
+    margin-top: 570px;
+    font-size: 40px;
+    text-decoration: none;
+    border: 5px white solid;
+    border-radius: 15px;
+    height: 50px;
+}
+
+.gift_banner a:hover {
+    background-color: white;
+    color: rgb(209, 0, 0);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: darkred;
+    font-size: 20px;
+}
+
+/* Responsive Christmas Leaves */
+.christmas-leaves {
+    background-image: url('/images/bannerchristmas-png.png');
+    background-repeat: repeat;
+    background-size: 500px 100px;
+    background-position: center;
+    position: absolute;
+    top: 130px;
+    width: 100%;
+    height: 100px;
+    z-index: 0;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    position: relative;
+    display: inline-block;
+    height: 59px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 260px;
+    text-align: left;
+    z-index: 1;
+    margin-left: 14px;
+}
+
+.dropdown-content a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    text-indent: 5px;
+    margin: 0px;
+}
+
+.dropdown-button {
+    background-color: rgb(209, 0, 0);
+    font-size: 30px;
+    cursor: pointer;
+    font-family: 'Pacifico', cursive;
+    color: white;
+    margin: 0 15px;
+    border: 3px white solid;
+    padding: 0px;
+}
+
+.dropdown-content a:hover {
+    background-color: white;
+    color: rgb(209, 0, 0);
+    border: 3px solid rgb(209, 0, 0);
+}
+
+.dropdown-menu:hover .dropdown-button {
+    background-color: white;
+    color: rgb(209, 0, 0);
+    border: 3px solid rgb(209, 0, 0);
+    padding: 2px;
+    margin: 0 14px;
+}
+
+.dropdown-menu:hover .dropdown-content {
+    display: block;
+    position: absolute;
+}
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content a img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    border: 5px white solid;
+}
+
+.content a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.content a:hover {
+    color: green;
+}
+
+h2 {
+    margin-top: 0px;
+    text-align: center;
+    padding-top: 30px;
+    font-weight: bold;
+    font-size: 50px;
+    font-family: 'Pacifico', cursive;
+    margin-bottom: -30px;
+}
+
+.text {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    color: black;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 3%;
+}
+
+.text p {
+    text-align: center;
+    width: 80%;
+    margin: 30px 10% 0 10%;
+}
+
+.product-container {
+    display: flex;
+}
+
+.product-image {
+    margin-left: 300px;
+    width: 30%;
+}
+
+.product-image img {
+    width: 500px;
+    height: 500px;
+}
+
+.product-details {
+    margin-left: 100px;
+    width: 50%;
+    text-align: left;
+}
+
+.product-details h2 {
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.row {
+    width: 80%;
+    height: auto;
+    margin: 3% 10%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.column {
+    display: none; /* Hide all elements by default */
+    flex: 1 1 20%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.content {
+    color: black;
+    text-align: center;
+}
+
+.show {
+    display: block;
+}
+
+.btn {
+    border: 3px solid white;
+    outline: none;
+    padding: 12px 16px;
+    background-color: rgb(209, 0, 0);
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 0 5px;
+}
+
+.btn:hover {
+    background-color: rgb(209, 0, 0);
+    color: white;
+}
+
+.btn.active {
+    background-color: white;
+    color: rgb(209, 0, 0);
+    border: 3px red solid;
+}
+
+#Category-button {
+    display: flex;
+    justify-content: center;
+}
+
+/* Santa Image */
+.santa {
+    background-image: url(/images/santa-shopping.jpg);
+    background-size: 1650px 500px;
+    height: 500px;
+    width: 100%;
+    display: flex;
+}
+
+.social_media_row {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+    margin: 0 10%;
+}
+
+.social_media_column {
+    width: 10%;
+}
+
+/* Contact Form Styles */
+form {
+    background-color: rgb(209, 0, 0);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+form input, form textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    width: 98%;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button {
+    background-color: darkred;
+    color: white;
+    padding: 12px 16px;
+    font-size: 18px;
+    border: 3px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: white;
+    color: red;
+    border: 3px solid red;
+}
+
+form input:focus, form textarea:focus {
+    border-color: rgb(2, 148, 34);
+}
+
+
+
+/* Product Container */
+.product-container {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Product Card */
+.product-card {
+    display: flex;
+    justify-content: center;
+    width: 80%; /* Use 80% of available width */
+    margin: 10px;
+    border: 3px solid white;
+    border-radius: 8px;
+    background-color: red;
+    padding: 20px;
+    color: white;
+}
+
+/* Flex Layout for Product Image and Info */
+.product-layout {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center; /* Align items in the center */
+}
+
+/* Image Navigation Section */
+.image-navigation {
+    width: 40%; /* Image area takes 40% */
+    position: relative;
+}
+
+/* Navigation buttons */
+.image-nav-btn {
+    position: absolute;
+    top: 50%; /* Center the buttons vertically */
+    transform: translateY(-50%); /* Adjust for true vertical centering */
+    background-color: rgba(12, 0, 0, 0.5); /* Semi-transparent background for buttons */
+    color: white;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1; /* Ensure buttons appear above media */
+}
+
+#prev-btn {
+    left: 0; /* Position the left button */
+}
+
+#next-btn {
+    right: 0; /* Position the right button */
+}
+
+/* Media container styling */
+#media-container {
+    width: 100%;
+    height: 530px;
+    text-align: center;
+}
+
+/* Product Info Section */
+.product-info {
+    width: 40%; /* Info area takes 40% */
+    padding-left: 20px;
+    text-align: left; /* Align text to the left */
+}
+
+/* Product Info Text */
+.product-info h3 {
+    font-size: 3rem;
+    margin: 10px 0;
+}
+
+.product-info p {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.product-info button {
+    padding: 10px;
+    background-color: darkred;
+    color: white;
+    border: 1px white solid;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.product-info button:hover {
+    background-color: red;
+}
+
+/* Cart items container to display items in a single row */
+.cart-items {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap into the next line if needed */
+    justify-content: center; /* Centers items horizontally */
+    align-items: flex-start; /* Aligns items at the top */
+    gap: 20px; /* Adds space between items */
+    padding: 20px 0; /* Add some vertical padding */
+}
+
+/* Cart items container to display items in a single row */
+.cart-items {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap into the next line if needed */
+    justify-content: center; /* Centers items horizontally */
+    align-items: flex-start; /* Aligns items at the top vertically */
+    gap: 20px; /* Adds space between items */
+    padding: 20px 0; /* Add some vertical padding */
+    margin: 0 auto; /* Center the .cart-items container itself */
+    max-width: 1200px; /* Set a max-width to avoid stretching on large screens */
+}
+
+/* Ensure cart items are displayed inline in the row */
+.cart-item {
+    display: flex;
+    flex-direction: row; /* Aligns items horizontally */
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-left: 25%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    height: auto; /* Allow for dynamic height */
+    width: 50%; /* Set width for medium screens, allowing items to be side by side */
+    justify-content: space-between; /* Space out image and details */
+    align-items: center; /* Center align the content vertically */
+}
+
+/* Style for the image inside the cart item */
+.cart-item-image img {
+    width: 150px; /* Set a fixed size for the image */
+    height: 150px;
+    padding-left: 5%;
+}
+
+/* Style for the cart item details */
+.cart-item-details {
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Align text vertically */
+    justify-content: flex-start; /* Align details at the top */
+    margin-top: 0;
+}
+
+/* Cart item remove button */
+.cart-item-remove {
+    display: flex;
+    justify-content: center; /* Center the remove button */
+    align-items: center;
+    width: 150px; /* Set a fixed width for the remove button container */
+    height: 60px; /* Set a fixed height for the remove button container */
+    margin-right: -1%;
+}
+
+/* Style for the remove button */
+.cart-item-remove button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 20px; /* Add padding for button's text */
+    cursor: pointer;
+    width: 100px; /* Makes the button fill the width of its container */
+    height: 100%; /* Makes the button fill the height of its container */
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Ensures the text is centered inside the button */
+}
+
+
+/* Play/Stop button styling with Font Awesome icons */
+.control-button {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    transform: translateX(-50%);
+    padding: 15px 20px;
+    font-size: 40px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+  }
+
+  .control-button:hover {
+    background-color: white;
+    color: red;
+  }
