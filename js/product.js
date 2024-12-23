@@ -8,9 +8,9 @@ const products = {
         ],
         price: "RM160.00",
         images: [
-            "/images/Monopoly/1.jpg",
-            "/images/Monopoly/2.jpg",
-            "/images/Monopoly/3.jpg"
+            "images/Monopoly/1.jpg",
+            "images/Monopoly/2.jpg",
+            "images/Monopoly/3.jpg"
         ]
     },
 
@@ -22,9 +22,9 @@ const products = {
         ],
         price: "RM15",
         images: [
-            "/images/Pirate_Barrel_Toy/1.jpg",
-            "/images/Pirate_Barrel_Toy/2.jpg",
-            "/images/Pirate_Barrel_Toy/3.jpg"
+            "images/Pirate_Barrel_Toy/1.jpg",
+            "images/Pirate_Barrel_Toy/2.jpg",
+            "images/Pirate_Barrel_Toy/3.jpg"
         ]
     },
 
@@ -36,9 +36,9 @@ const products = {
         ],
         price: "RM15",
         images: [
-            "/images/Secure_Dog_Teeth_Toy/1.webp",
-            "/images/Secure_Dog_Teeth_Toy/2.webp",
-            "/images/Secure_Dog_Teeth_Toy/3.webp"
+            "images/Secure_Dog_Teeth_Toy/1.webp",
+            "images/Secure_Dog_Teeth_Toy/2.webp",
+            "images/Secure_Dog_Teeth_Toy/3.webp"
         ]
     },
 
@@ -49,10 +49,10 @@ const products = {
         ],
         price: "RM3",
         images: [
-            "/images/Building_Blocks/1.png",
-            "/images/Building_Blocks/2.png",
-            "/images/Building_Blocks/3.png",
-            "/images/Building_Blocks/4.png"
+            "images/Building_Blocks/1.png",
+            "images/Building_Blocks/2.png",
+            "images/Building_Blocks/3.png",
+            "images/Building_Blocks/4.png"
         ]
     },
 
@@ -64,9 +64,9 @@ const products = {
         ],
         price: "RM29.99",
         images: [
-            "/images/crystal ball/1.webp",
-            "/images/crystal ball/2.webp",
-            "/images/crystal ball/3.webp"
+            "images/crystal ball/1.webp",
+            "images/crystal ball/2.webp",
+            "images/crystal ball/3.webp"
         ]
     },
 
@@ -78,9 +78,9 @@ const products = {
         ],
         price: "RM8",
         images: [
-            "/images/Rattan/1.webp",
-            "/images/Rattan/2.webp",
-            "/images/Rattan/3.webp"
+            "images/Rattan/1.webp",
+            "images/Rattan/2.webp",
+            "images/Rattan/3.webp"
         ]
     },
 
@@ -92,9 +92,9 @@ const products = {
         ],
         price: "RM30",
         images: [
-            "/images/Christmas_Ball_Ornaments/1.webp",
-            "/images/Christmas_Ball_Ornaments/2.webp",
-            "/images/Christmas_Ball_Ornaments/3.webp"
+            "images/Christmas_Ball_Ornaments/1.webp",
+            "images/Christmas_Ball_Ornaments/2.webp",
+            "images/Christmas_Ball_Ornaments/3.webp"
         ]
     },
 
@@ -107,9 +107,9 @@ const products = {
         ],
         price: "RM88.88",
         images: [
-            "/images/Christmas_Tree/1.webp",
-            "/images/Christmas_Tree/2.webp",
-            "/images/Christmas_Tree/3.webp"
+            "images/Christmas_Tree/1.webp",
+            "images/Christmas_Tree/2.webp",
+            "images/Christmas_Tree/3.webp"
         ]
     },
 
@@ -123,10 +123,10 @@ const products = {
         ],
         price: "RM338.88",
         images: [
-            "/images/Giulietta_Premium/1.webp",
-            "/images/Giulietta_Premium/2.webp",
-            "/images/Giulietta_Premium/3.webp",
-            "/images/Giulietta_Premium/4.webp"
+            "images/Giulietta_Premium/1.webp",
+            "images/Giulietta_Premium/2.webp",
+            "images/Giulietta_Premium/3.webp",
+            "images/Giulietta_Premium/4.webp"
         ]
     },
 
@@ -142,10 +142,10 @@ const products = {
         ],
         price: "RM288.88",
         images: [
-            "/images/Margareta_Classic/1.webp",
-            "/images/Margareta_Classic/2.webp",
-            "/images/Margareta_Classic/3.webp",
-            "/images/Margareta_Classic/4.webp"
+            "images/Margareta_Classic/1.webp",
+            "images/Margareta_Classic/2.webp",
+            "images/Margareta_Classic/3.webp",
+            "images/Margareta_Classic/4.webp"
         ]
     },
 
@@ -158,10 +158,10 @@ const products = {
         ],
         price: "RM228.88",
         images: [
-            "/images/Helga/1.webp",
-            "/images/Helga/2.webp",
-            "/images/Helga/3.webp",
-            "/images/Helga/4.webp"
+            "images/Helga/1.webp",
+            "images/Helga/2.webp",
+            "images/Helga/3.webp",
+            "images/Helga/4.webp"
         ]
     },
 
@@ -177,9 +177,9 @@ const products = {
         ],
         price: "RM58.88",
         images: [
-            "/images/Holiday_Classic/1.jpg",
-            "/images/Holiday_Classic/2.jpg",
-            "/images/Holiday_Classic/3.jpg"
+            "images/Holiday_Classic/1.jpg",
+            "images/Holiday_Classic/2.jpg",
+            "images/Holiday_Classic/3.jpg"
         ]
     },
     // Add more products here as needed
@@ -313,7 +313,7 @@ function displayProductDetails() {
         document.getElementById('product-description').textContent = "We couldn't find the product you're looking for.";
         document.getElementById('product-price').textContent = "";
         const mediaContainer = document.getElementById('media-container');
-        mediaContainer.innerHTML = "<img src='/images/placeholder.jpg' alt='Product Not Found'>";
+        mediaContainer.innerHTML = "<img src='images/placeholder.jpg' alt='Product Not Found'>";
     }
 }
 
